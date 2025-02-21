@@ -1,0 +1,1 @@
+const KNotesBox = 'NotesBox';
