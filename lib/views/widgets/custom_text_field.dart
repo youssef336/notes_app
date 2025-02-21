@@ -1,8 +1,13 @@
+// ignore_for_file: avoid_types_as_parameter_names
+
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
 class CustomTextField extends StatelessWidget {
-  CustomTextField({super.key, required this.labelText, this.maxLines = 1});
+  const CustomTextField({
+    super.key,
+    required this.labelText,
+    this.maxLines = 1,
+  });
 
   final String labelText;
   final int maxLines;
@@ -24,6 +29,7 @@ class CustomTextField extends StatelessWidget {
     );
   }
 
+  // ignore: non_constant_identifier_names
   OutlineInputBorder buildBorder([Color]) {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(8),

@@ -1,6 +1,8 @@
+// ignore: file_names
+// ignore_for_file: file_names, duplicate_ignore, camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:note_app/views/widgets/Custom_app_bar.dart';
-import 'package:note_app/views/widgets/custom_note_item.dart';
 import 'package:note_app/views/widgets/notes_list_view_body.dart';
 
 class NotesView_Body extends StatelessWidget {
