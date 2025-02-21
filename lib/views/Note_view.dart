@@ -7,11 +7,12 @@ import 'package:note_app/views/widgets/add_note_buttom_sheet.dart';
 
 class NotePage extends StatelessWidget {
   const NotePage({super.key});
-
+  static String id = 'NotePage';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.cyan,
         onPressed: () {
           showModalBottomSheet(
             context: context,
@@ -22,7 +23,7 @@ class NotePage extends StatelessWidget {
         },
         child: const Icon(Icons.add),
       ),
-      body: const NotesView_Body(),
+      body: NotesView_Body(),
     );
   }
 }
