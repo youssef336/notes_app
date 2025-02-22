@@ -52,8 +52,6 @@ class _AddNoteFormState extends State<AddNoteForm> {
                 print('Title: $_title');
                 print('Description: $_description');
               } else {
-                _autovalidateMode = AutovalidateMode.always;
-
                 setState(() {
                   _autovalidateMode = AutovalidateMode.onUserInteraction;
                 });

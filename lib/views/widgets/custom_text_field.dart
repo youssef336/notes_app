@@ -21,6 +21,7 @@ class CustomTextField extends StatelessWidget {
         if (value?.isEmpty ?? true) {
           return 'Please enter some text';
         }
+        return null;
       },
       maxLines: maxLines,
       cursorColor: Colors.cyan,
