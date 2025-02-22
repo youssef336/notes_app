@@ -18,12 +18,12 @@ class NoteModel extends HiveObject {
     required this.color,
   });
 
-  factory NoteModel.fromJson(jsonData) {
-    return NoteModel(
-      title: jsonData['title'],
-      description: jsonData['description'],
-      data: jsonData['Data'],
-      color: jsonData['color'],
-    );
-  }
+  // factory NoteModel.fromJson(jsonData) {
+  //   return NoteModel(
+  //     title: jsonData['title'],
+  //     description: jsonData['description'],
+  //     data: jsonData['Data'],
+  //     color: jsonData['color'],
+  //   );
+  // }
 }
