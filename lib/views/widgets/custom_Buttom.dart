@@ -4,9 +4,15 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class custom_Buttom extends StatelessWidget {
-  custom_Buttom({super.key, required this.text, this.onTAP});
-  String text;
-  VoidCallback? onTAP;
+  const custom_Buttom({
+    super.key,
+    required this.text,
+    this.onTAP,
+    this.isLoading = false,
+  });
+  final String text;
+  final VoidCallback? onTAP;
+  final bool isLoading;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -19,10 +25,19 @@ class custom_Buttom extends StatelessWidget {
         width: double.infinity,
         height: 50,
         child: Center(
-          child: Text(
-            text,
-            style: TextStyle(color: Colors.white, fontSize: 19),
-          ),
+          child:
+              isLoading
+                  ? SizedBox(
+                    height: 25,
+                    width: 25,
+                    child: const CircularProgressIndicator(
+                      valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
+                    ),
+                  )
+                  : Text(
+                    text,
+                    style: TextStyle(color: Colors.white, fontSize: 19),
+                  ),
         ),
       ),
     );
