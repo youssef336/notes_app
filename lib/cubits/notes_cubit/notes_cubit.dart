@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:bloc/bloc.dart';
 import 'package:hive/hive.dart';
 import 'package:meta/meta.dart';
@@ -13,5 +15,6 @@ class NotesCubit extends Cubit<NotesState> {
   fetchAllNotes() async {
     var notesBox = Hive.box<NoteModel>(KNotesBox);
     notes = notesBox.values.toList();
+    emit(NotesSuccess());
   }
 }
