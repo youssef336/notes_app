@@ -33,9 +33,9 @@ class CustomTextField extends StatelessWidget {
         enabledBorder: buildBorder(),
         focusedBorder: buildBorder(Colors.cyan),
         hintText: "Typing....",
-        hintStyle: TextStyle(color: Colors.cyan),
+        hintStyle: TextStyle(color: Colors.cyan.withValues(alpha: .6)),
         labelText: labelText,
-        labelStyle: TextStyle(color: Colors.cyan),
+        labelStyle: TextStyle(color: Colors.cyan.withValues(alpha: .8)),
         // labelText: labelText,
       ),
     );
