@@ -4,16 +4,22 @@ import 'package:flutter/material.dart';
 import 'package:note_app/views/widgets/custome_search_icon.dart';
 
 class Custom_app_bar extends StatelessWidget {
-  const Custom_app_bar({super.key, required this.text, required this.icon});
+  const Custom_app_bar({
+    super.key,
+    required this.text,
+    required this.icon,
+    this.onPressed,
+  });
   final String text;
   final IconData icon;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Text(text, style: TextStyle(fontSize: 28)),
         Spacer(),
-        CustomSearchIcon(icon: icon),
+        CustomSearchIcon(icon: icon, onPressed: onPressed),
       ],
     );
   }
