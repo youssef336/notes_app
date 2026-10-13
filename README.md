@@ -10,6 +10,11 @@
   <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-3DDC84?style=for-the-badge" alt="Platform" />
 </p>
 
+<p align="center">
+  <img src="docs/screens.jpg" alt="Screens" width="100%"/>
+  <br/><sub>Notes · Add note · Edit note</sub>
+</p>
+
 ## About
 
 A notes app built while learning **Cubit state management** and **local persistence with Hive**. Notes are saved on the device in a typed Hive box, so everything works offline and survives app restarts. Each note has a title, a description, a creation timestamp and a colour that you pick from a palette of ten.
